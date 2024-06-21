@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="shortcut icon" type="image/png" href="new-static/img/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CClicker+Script" rel="stylesheet" type="text/css">
+    <link href="new-static/css/fontello-icon.css" rel="stylesheet" type="text/css" />
+    <link href="new-static/css/linea-icon.css" rel="stylesheet" type="text/css" />
+    <link href="new-static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="new-static/css/simplelightbox.min.css" rel="stylesheet" type="text/css" />  
+    <link href="new-static/css/animate.css" rel="stylesheet" type="text/css" />   
+    <link href="new-static/css/flipclock.css" rel="stylesheet" type="text/css" />    
+    <link href="new-static/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="new-static/css/color-1.css" rel="stylesheet" type="text/css" id="skins" />
+    <title>myWedding - Coming Soon</title>
+</head>
+<body>
+<div class="page-overlay">
+    <div id="preloader">
+        <div class="alignment">
+            <div class="v-align center-middle"> 
+                <div class="heart-animation one">                	
+                    <i class="icon icon-heart"></i>
+                </div>
+                <div class="heart-animation two">
+                    <i class="icon icon-heart"></i>
+                </div>    
+                <div class="heart-animation three">                	
+                    <i class="icon icon-heart"></i>
+                </div>
+                <div class="heart-animation four">
+                    <i class="icon icon-heart"></i>
+                </div>     
+            </div>
+        </div>
+    </div>
+    <div class="page-image-bg reveal scale-in"></div>
+    <div class="overlay-bg-black overlay-opacity"></div>
+    <header>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 text-white col-transform">
+                        <div class="navbar-wrapper">
+                            <button class="navbar-button show-info" data-href="#content">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="info" class="col-md-12 text-white text-center page-info col-transform">
+        <div class="title-front">We are getting married</div>
+        <div class="logo">
+            <img src="new-static/img/logo.png" alt=""/>
+        </div>
+        <div class="all-title">
+            Vishal <span>&</span> Rajani
+        </div>
+        <div class="countdown-title">
+            
+        </div>
+        <div id="countdown"></div>
+        <div class="title-date">
+            <span class="swirl-left"><span class="swirl-right">14<span>.</span>06<span>.</span>2024</span></span>
+        </div>
+        <div class="title-under">Save the date</div>
+        <i class="icon ico-l-sm icon-l-arrows-slim-down-dashed animated fadeInDown"></i>
+        <audio autoplay src="new-static/ringtone/Aaj-Se-Teri-Ringtone.mp3" id="myAudio"></audio>
+                                            <button class=" btn btn-border-white animated fadeInUp" style="
+                                            display: inline-block;" type="submit" id="playButton">Play Audio</button>
+        <a class="btn btn-border-white show-info animated fadeInUp" role="button" data-href="#content">More info</a>
+    </div>
+    
+    <div id="google-map" class="col-md-6 page-map"></div>
+</div>
+
+<!-- All JavaScript Libraries -->
+<script src="new-static/js/jquery-3.1.1.min.js"></script> 
+
+<script src="new-static/js/bootstrap.min.js"></script>
+<script src="new-static/js/jquery.arctext.js"></script>
+
+<script src="new-static/js/flipclock.js"></script>
+<script src="new-static/js/simple-lightbox.min.js"></script> 
+
+
+<!--Google maps-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEjla2nPAcJpZBb1aA3AkzFd__o7Nha38"></script> 
+<script src="new-static/js/infobox.min.js"></script> 
+<!-- Custom JavaScript -->
+<script src="new-static/js/main.js"></script>
+<!-- Switcher Color JavaScript -->
+<script src="new-static/js/switcher/cookie.js"></script>
+<script src="new-static/js/switcher/colorswitcher.js"></script>
+
+<script>
+    
+
+
+
+//for ringtone audio
+
+window.addEventListener("DOMContentReady", event => {
+        const audio = document.querySelector("audio");
+        audio.play();
+    });
+
+    window.addEventListener("load", event => {
+        const audio = document.querySelector("audio");
+        audio.play();
+    });
+
+
+    function playAudio() {
+        var audio = document.getElementById('myAudio');
+        audio.muted = false; // Unmute the audio
+        audio.play(); // Start playback
+    }
+
+    // Add event listener to the button
+    document.getElementById('playButton').addEventListener('click', playAudio);
+</script>
+
+
+</body>
+</html>
